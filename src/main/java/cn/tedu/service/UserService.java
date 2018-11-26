@@ -10,4 +10,9 @@ public interface UserService {
 	public void insert(User user);
 	public void update(User user);
 	public void delete(Integer id);
+	
+	
+	//d 
+	
+	
 }
