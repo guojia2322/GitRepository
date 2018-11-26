@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.tedu</groupId>
+  <artifactId>hello</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- SpringBoot基于Maven工程，它的父工程自己完成 org\springframework\boot\spring-boot-starter-parent\1.5.4.RELEASE -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.4.RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<!-- 配置字符集UTF-8，jdk1.8（SpringBoot+SpringCloud必须在1.8以上） -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<!-- springmvc，spring -->
+	<dependencies>
+		<!-- 非常常用的通用的jar无需自己来加 \org\springframework\boot\spring-boot-starter-web\1.5.4.RELEASE -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- 它没有mybatis -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>druid-spring-boot-starter</artifactId>
+		<version>1.1.6</version>
+	</dependency>
+
+	</dependencies>
+  
+  
+  
+</project>
